@@ -1,20 +1,45 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="preloader">
+  <div class="anim pulse"><i class="ion-ios-bolt-outline"></i></div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="preloader-left"></div>
+<div  class="inline-menu-container style3 showx">
+  <ul class="inline-menu">
+      <li class="about menu-item" [ngClass]="{'active': menu=='about'}" (click)="menu='about'">Resume</li>
+      <li class="portfolio menu-item" [ngClass]="{'active': menu=='portafolio'}" (click)="menu='portafolio'">Portfolio</li>
+      <li class="blog menu-item" [ngClass]="{'active': menu=='blog'}" (click)="menu='blog'">Blog</li>
+      <li class="contact menu-item" [ngClass]="{'active': menu=='contacto'}" (click)="menu='contacto'">Contact</li>
+  </ul>
+</div>
+<section class="home">
+  <div class="container">
+      <div class="name-block reverse" style="background: url(/../../assets/images/bg/img-bg3.jpg); background-size: cover">
+          <div class="overlay opacity3"></div>
+          <div class="name-block-container reverse">
+              <h1><span>Hola, soy</span>Juan Cruz Rey</h1>
+              <h2>UX & Developer</h2>
+              <a target="_blank" href="www.google.com" class="btn btn-download">Download cv</a>
+              <ul class="social">
+                  <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                  <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                  <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="content-blocks about"   [ngClass]="{'showx': menu=='about'}" >
+          <app-about></app-about>
+      </div>
+      <div class="content-blocks portfolio"   [ngClass]="{'showx': menu=='portafolio'}" >
+          <app-portafolio></app-portafolio>
+      </div>
+      <div class="content-blocks blog"    [ngClass]="{'showx': menu=='blog'}" >
+          <app-blog></app-blog>
+      </div>
+      <div class="content-blocks contact"    [ngClass]="{'showx': menu=='contacto'}" >
+          <app-contacto></app-contacto>
+      </div>
+      <div class="content-blocks pop">
+          <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
+          <section class="content"></section>
+      </div>
+  </div>
+</section>
