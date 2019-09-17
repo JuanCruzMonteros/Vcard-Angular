@@ -1,4 +1,38 @@
-# Vcard
+# Vcard Angular Theme
+_Carta de presentación virtual_
+
+Puede ver una demo [Aquí](https://juancruzmonteros.github.io/Vcard-Angular/Vcard/index.html)
+
+## Comenzando 🚀
+
+### Pre-requisitos 📋
+
+_Que cosas necesitas para instalar el software y como instalarlas_
+
+```
+Node js: https://nodejs.org/es/download/
+Angular CLI: https://cli.angular.io/
+
+```
+
+### Instalación 🔧
+
+_Aplicar estos pasos luego de que el backend este levantado_
+
+```
+Ejecutar una terminal/consola en la carpeta del proyecto y correr los siguientes comandos:
+> npm install
+> ng serve -o
+```
+
+
+## Construido con 🛠️
+Node js: https://nodejs.org/es/download/
+* [Angular CLI](https://cli.angular.io/) - El framework web usado
+* [fortawesome](https://fortawesome.com/) - Iconos
+* [bootstrap](https://getbootstrap.com/) - Será usado maquetacion
+* [ng-bootstrap](https://ng-bootstrap.github.io/) - Será usado maquetacion
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
